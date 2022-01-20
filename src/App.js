@@ -5,8 +5,7 @@ import Button from "@mui/material/Button";
 import Message from "./Message";
 import SendIcon from '@mui/icons-material/Send';
 
-import {db,addDoc,getDocs,onSnapshot,collection,doc} from "./firebase"
-import { orderBy } from "@firebase/firestore";
+import {db,addDoc,getDocs,collection,orderBy} from "./firebase"
 
 function App() {
   const [input, setInput] = useState("");

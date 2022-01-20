@@ -17,5 +17,6 @@ export {
     doc,
     onSnapshot,
     getDocs,collection,
-    addDoc
+    addDoc,
+    orderBy
 }

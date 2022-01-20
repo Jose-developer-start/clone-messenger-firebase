@@ -19,9 +19,7 @@
   width: 100%;
 }
 Input{
-  width: 250px !important;
-  border-bottom: none !important;
-  padding: 0px 20px !important;
+  flex: 1;
 }
 Button:hover{
   background: #9b8282;
