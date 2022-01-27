@@ -1,7 +1,7 @@
 // Initialize Cloud Firestore through Firebase
 import { initializeApp } from "firebase/app"
-import { getFirestore, doc, onSnapshot,collection,getDocs,addDoc, orderBy } from "firebase/firestore"
-const firebaseApp = initializeApp({
+import { getFirestore, doc, onSnapshot,collection,serverTimestamp,getDocs,addDoc, orderBy } from "firebase/firestore"
+const app = initializeApp({
     apiKey: "AIzaSyBdOs_FtWN077DWtHxYKx9xuf1yfT8M3oA",
     authDomain: "messenger-clone-947ff.firebaseapp.com",
     projectId: "messenger-clone-947ff",
@@ -10,7 +10,7 @@ const firebaseApp = initializeApp({
     appId: "1:879451149866:web:230eb3c949b610b7c59553"
 });
 
-const db = getFirestore(firebaseApp);
+const db = getFirestore(app);
 
 export {
     db,
@@ -18,5 +18,6 @@ export {
     onSnapshot,
     getDocs,collection,
     addDoc,
-    orderBy
+    orderBy,
+    serverTimestamp
 }
